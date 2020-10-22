@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieActivity">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Movie Details"
+        android:titleTextColor="@color/colorWhite"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:navigationIcon="@drawable/back_button">
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/lightGrey">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/search_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20sdp"
+            android:text=""/>
+        <TextView
+            android:id="@+id/overview"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:text=""/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/rating"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:text=""/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
